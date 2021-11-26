@@ -1,3 +1,4 @@
+
 <html>
 
 <head>
@@ -19,7 +20,7 @@
             <div class="navbar">
                 <img src="<?= WEBROOT.'asset/Image/Logo.PNG' ?>" alt="logo">
                 <div class="navbar-list">
-                    <a href="<?= WEBROOT.'articles/produits'?>">Article</a>
+                    <a href="<?= WEBROOT.'articles/article'?>">Article</a>
                     <a href="#">A propos</a>
                     <a href="#">Contact</a>
                     <a href="<?= WEBROOT.'utilisateur/connexion'?>">Se connecter</a>

@@ -15,7 +15,6 @@
 </nav>
 <?php
 foreach($articles as $article){
-  var_dump($article);
   echo '<br>';
   ?>
 

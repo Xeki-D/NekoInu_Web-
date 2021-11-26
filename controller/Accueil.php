@@ -11,10 +11,6 @@
         }
 
 
-
-        public function produit() {
-            $this->render("produit");
-        }
     }       
     
 ?>
