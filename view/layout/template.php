@@ -1,6 +1,7 @@
-
+<?php
+session_start();
+?>
 <html>
-
 <head>
     <script src="https://kit.fontawesome.com/f864103c2e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="<?= WEBROOT.'asset/styles/Styles.css' ?>" />

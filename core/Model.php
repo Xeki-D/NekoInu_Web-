@@ -99,7 +99,6 @@ Class Model{
         
         $sql="SELECT $champs FROM $this->table $join WHERE $condition
         $order $limit";
-        var_dump($sql);
         $requete = $pdo->prepare($sql);
         $requete->execute();
         $resultats=$requete->fetchAll(PDO::FETCH_OBJ);

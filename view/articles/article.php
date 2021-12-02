@@ -1,7 +1,3 @@
-<?php
-//var_dump($articles);
-?>
-
 <nav class="product-filter">
   <h1>Jouet</h1>
   <div class="sort">
@@ -24,11 +20,12 @@ foreach($articles as $article){
       <img src="IMG_PRODUIT">
     </div>
     <div class="product-info">
+      <!--<img src="<?= $article->IMG_PRODUIT ?>">-->
       <h5><?= $article->NOM_PRODUIT ?></h5>
-      <h6><?= $article->PRIX_PRODUIT ?></h6>
+      <h6><?= $article->PRIX_PRODUIT ?> €</h6>
+      <input type="button" value="Ajouter au pagnier">
     </div>
   </div>
-  <!-- d’autres produits -->
 </section>
 
 <?php
