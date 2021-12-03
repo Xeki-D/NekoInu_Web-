@@ -6,6 +6,8 @@ session_start();
     <script src="https://kit.fontawesome.com/f864103c2e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="<?= WEBROOT.'asset/styles/Styles.css' ?>" />
     <script type="text/javascript" src="<?= WEBROOT.'asset/js/script.js'?>"></script>
+    <script src="<?= WEBROOT ?>asset/js/jquery.min.js"></script>
+    <script src="<?= WEBROOT ?>asset/js/panier.js"></script>
 
     <meta charset="utf-8" />
     <meta name="description" content="Neko & Inu site de vente de produit pourchien et chat" />
@@ -25,7 +27,21 @@ session_start();
                     <a href="#">A propos</a>
                     <a href="#">Contact</a>
                     <a href="<?= WEBROOT.'utilisateur/connexion'?>">Se connecter</a>
-                    <a hreft="#"><i class="fas fa-shopping-basket" style="padding: 10px; text-align: center;"></i></a>
+                    <a class="nav-link" href="<?= WEBROOT ?>panier"><i class="fas fa-shopping-basket" style="padding: 10px; text-align: center;"></i>
+                    <span id="total">
+                        <?php
+                            if(isset($_SESSION['totalpanier'])) 
+                            {
+                                if ($_SESSION['totalpanier']!=0)
+                                {
+                                    echo '<i class="badge badge-light">';
+                                    echo $_SESSION['totalpanier'];
+                                    echo '</i>';
+                                }
+                            }
+                        ?>
+                    </span>
+                    </a>
                 </div>
             </div>
         </nav>
