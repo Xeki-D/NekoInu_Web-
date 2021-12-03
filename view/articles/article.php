@@ -1,4 +1,4 @@
-<nav class="product-filter">
+<!--<nav class="product-filter">
   <h1>Jouet</h1>
   <div class="sort">
     <div class="collection-sort">
@@ -8,7 +8,11 @@
       </select>
     </div>
   </div>
-</nav>
+</nav>-->
+<form action="<?= WEBROOT.'Articles/findarticle' ?>" method="POST" style="display:flex">
+  <input type="text" name="recherche" placeholder="recherche"/>
+  <input type="submit" name="valider" value="OK" />
+</form>
 <?php
 foreach($articles as $article){
   echo '<br>';

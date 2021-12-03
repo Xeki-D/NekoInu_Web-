@@ -61,7 +61,6 @@ Class Model{
         }
         $sql =substr($sql,0,-1);
         $sql .=")";
-        var_dump($sql);
          
 
         $requete = $pdo->prepare($sql);
@@ -71,8 +70,10 @@ Class Model{
         foreach($data as $k=>$v){
             $tab[":$k"]=$v;
         } 
+        
         var_dump($tab);
         var_dump($requete->execute($tab));
+        
         
     }
 
@@ -103,6 +104,7 @@ Class Model{
         $requete->execute();
         $resultats=$requete->fetchAll(PDO::FETCH_OBJ);
         return $resultats;
+        
     }  
 
     public static function load($name){
